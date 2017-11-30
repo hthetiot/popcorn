@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="https://staging-aurora.montagestudio.com/app/5e5d86aaa20f81c73481c7819b892c3430f6cb15/main.css">
     <script type="text/montage-serialization">
     {
         "owner": {
@@ -14,8 +14,8 @@
         "categories": {
             "prototype": "ui/categories.reel",
             "values": {
-                "element": {"#": "categories"},
-                "categories": {"<-": "@owner.moviesService.categories"}
+                "categories": {"<-": "@owner.moviesService.categories"},
+                "element": {"#": "categories"}
             }
         },
         "details": {
@@ -28,9 +28,9 @@
         "moviestrip": {
             "prototype": "ui/moviestrip.reel",
             "values": {
+                "categoryContentController": {"<-": "@owner.moviesService.categories.selection.one().contentController"},
                 "element": {"#": "moviestrip"},
-                "movieDetails": {"@": "details"},
-                "categoryContentController": {"<-": "@owner.moviesService.categories.selection.one().contentController"}
+                "movieDetails": {"@": "details"}
             }
         },
         "player": {
@@ -44,13 +44,13 @@
 </head>
 <body>
     <div data-montage-id="owner" class="Main">
-        <img class="logo" src="../../assets/image/logo.png" alt="logo">
+        <img class="logo" src="https://staging-aurora.montagestudio.com/assets/image/logo.png" alt="logo">
         <div data-montage-id="categories"></div>
         <div data-montage-id="mainContent" class="Main-content">
+            <div data-montage-id="details" class="Main-details"></div>
             <div data-montage-id="moviestrip" class="Main-strip">
 
             </div>
-            <div data-montage-id="details" class="Main-details"></div>
         </div>
         <a class="MontageMade" href="http://montagestudio.com/montagejs/">
             Made with Montage

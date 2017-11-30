@@ -1,36 +1,212 @@
 {
-  "blueprint_component_reference": {
-    "prototype": "montage/core/meta/blueprint-reference",
+  "objectDescriptor_component_identifier": {
+    "prototype": "montage/core/meta/property-descriptor",
     "values": {
-      "valueReference": {
-        "blueprintName": "Component",
-        "blueprintModule": {
-          "%": "montage/ui/component.meta"
-        }
-      }
+      "name": "identifier",
+      "objectDescriptor": {"@": "objectDescriptor_component"}
     }
   },
-  "blueprint_unnamed_rottenTomato": {
-    "prototype": "montage/core/meta/property-blueprint",
+  "objectDescriptor_component_element": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "element",
+      "objectDescriptor": {"@": "objectDescriptor_component"},
+      "readOnly": true
+    }
+  },
+  "objectDescriptor_component_classList": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "classList",
+      "objectDescriptor": {"@": "objectDescriptor_component"},
+      "cardinality": -1,
+      "collectionValueType": "set"
+    }
+  },
+  "objectDescriptor_component_accesskey": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "accesskey",
+      "objectDescriptor": {"@": "objectDescriptor_component"}
+    }
+  },
+  "objectDescriptor_component_contenteditable": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "contenteditable",
+      "objectDescriptor": {"@": "objectDescriptor_component"},
+      "valueType": "enum",
+      "enumValues": [
+        "true",
+        "false",
+        "inherit"
+      ],
+      "defaultValue": "inherit"
+    }
+  },
+  "objectDescriptor_component_contextmenu": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "contextmenu",
+      "objectDescriptor": {"@": "objectDescriptor_component"}
+    }
+  },
+  "objectDescriptor_component_dir": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "dir",
+      "objectDescriptor": {"@": "objectDescriptor_component"},
+      "valueType": "enum",
+      "enumValues": [
+        "ltr",
+        "rtl",
+        "auto"
+      ],
+      "defaultValue": "auto"
+    }
+  },
+  "objectDescriptor_component_draggable": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "draggable",
+      "objectDescriptor": {"@": "objectDescriptor_component"},
+      "valueType": "enum",
+      "enumValues": [
+        "true",
+        "false",
+        "auto"
+      ],
+      "defaultValue": "auto"
+    }
+  },
+  "objectDescriptor_component_dropzone": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "dropzone",
+      "objectDescriptor": {"@": "objectDescriptor_component"}
+    }
+  },
+  "objectDescriptor_component_hidden": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "hidden",
+      "objectDescriptor": {"@": "objectDescriptor_component"},
+      "valueType": "boolean"
+    }
+  },
+  "objectDescriptor_component_lang": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "lang",
+      "objectDescriptor": {"@": "objectDescriptor_component"}
+    }
+  },
+  "objectDescriptor_component_spellcheck": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "spellcheck",
+      "objectDescriptor": {"@": "objectDescriptor_component"},
+      "valueType": "boolean"
+    }
+  },
+  "objectDescriptor_component_style": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "style",
+      "objectDescriptor": {"@": "objectDescriptor_component"}
+    }
+  },
+  "objectDescriptor_component_tabindex": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "tabindex",
+      "objectDescriptor": {"@": "objectDescriptor_component"},
+      "valueType": "number"
+    }
+  },
+  "objectDescriptor_component_title": {
+    "prototype": "montage/core/meta/property-descriptor",
+    "values": {
+      "name": "title",
+      "objectDescriptor": {"@": "objectDescriptor_component"}
+    }
+  },
+  "objectDescriptor_component": {
+    "prototype": "montage/core/meta/module-object-descriptor",
+    "values": {
+      "name": "Component",
+      "objectDescriptorModule": {
+        "%": "montage/ui/component.meta"
+      },
+      "propertyDescriptors": [
+        {"@": "objectDescriptor_component_identifier"},
+        {"@": "objectDescriptor_component_element"},
+        {"@": "objectDescriptor_component_classList"},
+        {"@": "objectDescriptor_component_accesskey"},
+        {"@": "objectDescriptor_component_contenteditable"},
+        {"@": "objectDescriptor_component_contextmenu"},
+        {"@": "objectDescriptor_component_dir"},
+        {"@": "objectDescriptor_component_draggable"},
+        {"@": "objectDescriptor_component_dropzone"},
+        {"@": "objectDescriptor_component_hidden"},
+        {"@": "objectDescriptor_component_lang"},
+        {"@": "objectDescriptor_component_spellcheck"},
+        {"@": "objectDescriptor_component_style"},
+        {"@": "objectDescriptor_component_tabindex"},
+        {"@": "objectDescriptor_component_title"}
+      ],
+      "propertyDescriptorGroups": {
+        "component": [
+          {"@": "objectDescriptor_component_identifier"}
+        ],
+        "element": [
+          {"@": "objectDescriptor_component_classList"},
+          {"@": "objectDescriptor_component_accesskey"},
+          {"@": "objectDescriptor_component_contenteditable"},
+          {"@": "objectDescriptor_component_contextmenu"},
+          {"@": "objectDescriptor_component_dir"},
+          {"@": "objectDescriptor_component_draggable"},
+          {"@": "objectDescriptor_component_dropzone"},
+          {"@": "objectDescriptor_component_hidden"},
+          {"@": "objectDescriptor_component_lang"},
+          {"@": "objectDescriptor_component_spellcheck"},
+          {"@": "objectDescriptor_component_style"},
+          {"@": "objectDescriptor_component_tabindex"},
+          {"@": "objectDescriptor_component_title"}
+        ]
+      },
+      "maxAge": 240,
+      "module": {
+        "%": "montage/ui/component"
+      },
+      "exportName": "Component"
+    }
+  },
+  "objectDescriptor_unnamed_moviesService": {
+    "prototype": "montage/core/meta/property-descriptor",
     "values": {
       "name": "moviesService",
-      "blueprint": {"@": "root"},
+      "objectDescriptor": {"@": "root"},
       "valueType": "object"
     }
   },
   "root": {
-    "prototype": "montage/core/meta/module-blueprint",
+    "prototype": "montage/core/meta/module-object-descriptor",
     "values": {
       "name": null,
-      "parent": {"@": "blueprint_component_reference"},
-      "propertyBlueprints": [
-        {"@": "blueprint_unnamed_rottenTomato"}
+      "objectDescriptorModule": {
+        "%": "ui/main.reel/main.meta"
+      },
+      "parent": {"@": "objectDescriptor_component"},
+      "propertyDescriptors": [
+        {"@": "objectDescriptor_unnamed_moviesService"}
       ],
-      "propertyBlueprintGroups": {
+      "propertyDescriptorGroups": {
         "Main": [
-          {"@": "blueprint_unnamed_rottenTomato"}
+          {"@": "objectDescriptor_unnamed_moviesService"}
         ]
       },
+      "maxAge": 240,
       "module": {
         "%": "ui/main.reel"
       },
